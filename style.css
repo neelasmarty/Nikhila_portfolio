@@ -1,0 +1,162 @@
+/* Font & Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  animation: slideIn 1s ease-out;
+}
+
+header nav {
+  margin-top: 15px;
+}
+
+header nav a {
+  color: #61dafb;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffd700;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* About */
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #61dafb;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Projects */
+.project-card {
+  background: #eef7ff;
+  border-left: 5px solid #61dafb;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Experience */
+ul {
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-grid li {
+  background-color: #d6f0f7;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Contact */
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e0e0e0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-in;
+}
+
+.slide-in {
+  animation: slideIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
